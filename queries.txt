@@ -1,0 +1,29 @@
+?- father(khalid, lama).
+true.
+
+?- father(amal, ali).
+false.
+
+?- mother(amal, ali).
+true.
+
+?- mother(ahmed, ali).
+false.
+
+?- sister(lama, ahmed).
+true ;
+true.
+
+Note: The query returns true twice because Lama and Ahmed share two parents, Ahoud and Khalid.
+
+?- sister(ahmed, lama).
+false.
+
+?- brother(ali, reem).
+true ;
+true.
+
+Note: The query returns true twice because Ali and Reem share two parents, Amal and Ahmed.
+
+?- brother(reem, ali).
+false.
